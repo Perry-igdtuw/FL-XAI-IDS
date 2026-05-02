@@ -1,0 +1,12 @@
+[
+  "BENIGN",
+  "DDoS",
+  "DoS GoldenEye",
+  "DoS Hulk",
+  "DoS Slowhttptest",
+  "DoS slowloris",
+  "FTP-Patator",
+  "PortScan",
+  "SSH-Patator",
+  "Web Attack \ufffd Brute Force"
+]

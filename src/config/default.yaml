@@ -1,0 +1,30 @@
+project:
+  seed: 42
+  output_dir: "results"
+
+data:
+  cicids_path: "data/raw/cicids.csv"
+  label_column: "Label"         # may differ in your CSV; we’ll verify
+  task: "multiclass"
+  test_size: 0.15
+  val_size: 0.15
+  standardize: true
+
+federated:
+  num_clients: 10
+  num_rounds: 30
+  local_epochs: 2
+  batch_size: 512
+  lr: 0.001
+  fraction_fit: 1.0
+  fraction_evaluate: 1.0
+
+model:
+  type: "mlp"
+  hidden_dims: [256, 128, 64]
+  dropout: 0.2
+
+xai:
+  method: "shap"
+  background_samples: 1024
+  explain_samples: 200
