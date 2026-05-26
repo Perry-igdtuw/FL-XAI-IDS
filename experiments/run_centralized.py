@@ -24,7 +24,7 @@ BATCH_SIZE = 2048
 EPOCHS = 10
 LR = 1e-3
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-
+#executing main
 
 def main():
     set_seed(SEED)
